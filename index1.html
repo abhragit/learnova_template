@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #84fab0, #8fd3f4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 15px 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        .btn {
+            background: #84fab0;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .btn:hover {
+            background: #8fd3f4;
+        }
+        .facebook-btn {
+            background: #4267b2;
+            color: #fff;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .facebook-btn:hover {
+            background: #365899;
+        }
+        .note {
+            font-size: 12px;
+            margin-top: 15px;
+            color: #777;
+        }
+        a {
+            text-decoration: none;
+            color: #84fab0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign-In Page</h1>
+        <input type="text" placeholder="Age">
+        <input type="text" placeholder="Name (optional)">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="btn">Create Account</button>
+        <p class="note">For more details, visit our <a href="#">Privacy Policy</a>.</p>
+        <hr>
+        <button class="facebook-btn">Sign Up with Facebook</button>
+    </div>
+</body>
+</html>
